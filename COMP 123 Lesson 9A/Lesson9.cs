@@ -44,7 +44,9 @@ namespace COMP_123_Lesson_9A
 
         private void CalculatorNumber_Click(object sender, EventArgs e)
         {
-
+            //Button selectedButton = (Button)sender;//down cast
+            Button selectedButton = sender as Button;
+            resultLabel.Text = selectedButton.Text;
         }
     }
 }
