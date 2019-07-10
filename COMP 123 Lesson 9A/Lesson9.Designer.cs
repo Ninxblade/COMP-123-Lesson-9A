@@ -44,6 +44,7 @@
             this.resultLabel = new System.Windows.Forms.Label();
             this.DoneButton = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.NumberButtonTableLayoutPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,7 +75,6 @@
             this.NumberButtonTableLayoutPanel.Controls.Add(this.threeButton, 2, 3);
             this.NumberButtonTableLayoutPanel.Controls.Add(this.twoButton, 1, 3);
             this.NumberButtonTableLayoutPanel.Controls.Add(this.oneButton, 0, 3);
-            this.NumberButtonTableLayoutPanel.Controls.Add(this.sixButton, 2, 2);
             this.NumberButtonTableLayoutPanel.Controls.Add(this.fiveButton, 1, 2);
             this.NumberButtonTableLayoutPanel.Controls.Add(this.fourButton, 0, 2);
             this.NumberButtonTableLayoutPanel.Controls.Add(this.nineButton, 2, 1);
@@ -83,6 +83,8 @@
             this.NumberButtonTableLayoutPanel.Controls.Add(this.DoneButton, 3, 4);
             this.NumberButtonTableLayoutPanel.Controls.Add(this.eightButton, 1, 1);
             this.NumberButtonTableLayoutPanel.Controls.Add(this.button1, 3, 1);
+            this.NumberButtonTableLayoutPanel.Controls.Add(this.sixButton, 3, 2);
+            this.NumberButtonTableLayoutPanel.Controls.Add(this.button2, 2, 2);
             this.NumberButtonTableLayoutPanel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.NumberButtonTableLayoutPanel.Location = new System.Drawing.Point(165, 43);
             this.NumberButtonTableLayoutPanel.Name = "NumberButtonTableLayoutPanel";
@@ -157,13 +159,13 @@
             // 
             this.sixButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.sixButton.BackColor = System.Drawing.Color.SteelBlue;
-            this.sixButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sixButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sixButton.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.sixButton.Location = new System.Drawing.Point(197, 184);
+            this.sixButton.Location = new System.Drawing.Point(312, 184);
             this.sixButton.Name = "sixButton";
-            this.sixButton.Size = new System.Drawing.Size(109, 85);
+            this.sixButton.Size = new System.Drawing.Size(92, 85);
             this.sixButton.TabIndex = 5;
-            this.sixButton.Text = "6";
+            this.sixButton.Text = "Clear";
             this.sixButton.UseVisualStyleBackColor = false;
             this.sixButton.Click += new System.EventHandler(this.CalculatorNumber_Click);
             // 
@@ -277,6 +279,20 @@
             this.button1.TabIndex = 13;
             this.button1.UseVisualStyleBackColor = false;
             // 
+            // button2
+            // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.button2.BackColor = System.Drawing.Color.SteelBlue;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button2.Location = new System.Drawing.Point(205, 184);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(92, 85);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "6";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.CalculatorNumber_Click);
+            // 
             // Lesson9
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -309,6 +325,7 @@
         private System.Windows.Forms.Button equalButton;
         private System.Windows.Forms.Button DoneButton;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
 
