@@ -41,12 +41,35 @@ namespace COMP_123_Lesson_9A
         {
 
         }
-
+        /// <summary>
+        /// Shared event for calculator button click event 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void CalculatorNumber_Click(object sender, EventArgs e)
         {
             //Button selectedButton = (Button)sender;//down cast
+
+
+
+            Button selectedButton = sender as Button;
+            Button selectedButton = sender as Button;
+            Button selectedButton = sender as Button;
             Button selectedButton = sender as Button;
             resultLabel.Text = selectedButton.Text;
+            switch (selectedButton.Text)
+            {
+                case "1":
+                    resultLabel.Text = "1";
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        private void EqualButton_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
